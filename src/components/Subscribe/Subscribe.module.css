@@ -1,0 +1,42 @@
+h2 {
+    text-transform: uppercase;
+    color: #313037;
+  }
+  
+  p {
+    color: #a8a8a8;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  
+  .container {
+    display: block;
+    padding: 56px 64px;
+    height: 288px;
+    background-color: #f4eefd;
+  }
+  
+  .subscribe__form {
+    display: flex;
+    margin-top: 32px;
+  }
+  
+  .form_input {
+    width: 845px;
+    height: 56px;
+    padding-left: 24px;
+  }
+  
+  .subscribe__form ::placeholder {
+    color: #a8a8a8;
+  }
+  
+  .form_btn {
+    width: 147px;
+    height: 56px;
+    background-color: #313037;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5%;
+  }
+  

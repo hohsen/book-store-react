@@ -1,0 +1,50 @@
+.header .container {
+    justify-content: space-between;
+    align-items: center;
+    height: 104px;
+    display: flex;
+    margin: 0 auto 72px auto;
+    border-bottom: 1px #e7e7e7 solid;
+  }
+  
+  .header__search {
+    width: 542px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #e7e7e7;
+  }
+  
+  .header__search input {
+    width: 100%;
+    margin: 14px 0 10px 20px;
+  }
+  
+  .header__search input:placeholder-shown {
+    line-height: 32px;
+  }
+  
+  .header__search button {
+    margin: 16px;
+  }
+  
+  .header__actions {
+    width: 184px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 56px;
+    height: 56px;
+    display: block;
+    pointer-events: none;
+  }
+  
+  .icon img {
+    margin: 16px;
+    pointer-events: all;
+  }
+  
