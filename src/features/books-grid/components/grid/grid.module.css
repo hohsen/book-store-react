@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  grid-template-columns: 352px 352px 352px;
+  grid-gap: 32px;
+  margin: 48px 0 72px 0;
+}
+
+.book {
+  width: 352px;
+  height: 454px;
+  background-color: #00ffff;
+}
+
+.pages {
+  display: flex;
+  height: 75px;
+  border-top: #e7e7e7 solid 1px;
+  padding-top: 48px;
+  margin-bottom: 72px;
+}
