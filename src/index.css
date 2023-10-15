@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body {
   display: block;
   width: 100vw;
@@ -9,7 +11,7 @@ h1,
 h2,
 h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h1 {
