@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { Link } from "react-router-dom";
 
 import bookstore from "../../assets/icons/bookstore.svg";
 import heart from "../../assets/icons/heart-black.svg";
@@ -11,9 +12,9 @@ export const AppHeader: FC = () => {
   return (
     <header id="header" className={styles.header}>
       <div className={styles.container}>
-        <a className={styles.header__logo} data-action-id="home">
+        <Link to="/" className={styles.header__logo} data-action-id="home">
           <img src={bookstore} alt="BOOKSTORE" />
-        </a>
+        </Link>
         <form className={styles.header__search}>
           <input type="text" id="search-input" name="" placeholder="Search" />
           <button>
@@ -21,15 +22,19 @@ export const AppHeader: FC = () => {
           </button>
         </form>
         <div className={styles.header__actions}>
-          <a data-action-id="favorites" className={styles.icon}>
+          <Link
+            to="/favorites"
+            data-action-id="favorites"
+            className={styles.icon}
+          >
             <img src={heart} alt="favorite" />
-          </a>
-          <a data-action-id="cart" className={styles.icon}>
+          </Link>
+          <Link to="cart" data-action-id="cart" className={styles.icon}>
             <img src={shoppingBag} alt="cart" />
-          </a>
-          <a data-action-id="profile" className={styles.icon}>
+          </Link>
+          <Link to="profile" data-action-id="profile" className={styles.icon}>
             <img src={user} alt="user" />
-          </a>
+          </Link>
         </div>
       </div>
     </header>
