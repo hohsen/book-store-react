@@ -10,14 +10,19 @@
   flex-direction: column;
   width: 352px;
   height: 454px;
-  background-color: #e7e7e7; /*for testing*/
 } 
 
 .book__img{
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #F4EEFD;
 } 
+
+.book__img img{
+  width: 226px;
+  height: 264px;
+}
 
 .book__info{
   display: flex;

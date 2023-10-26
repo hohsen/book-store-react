@@ -1,0 +1,84 @@
+.backArrow{
+    margin-bottom: 37px;
+}
+
+.book__main{
+    height: 472px;
+    display: flex;
+    flex-direction: row;
+    margin: 48px 0 72px 0;
+    gap: 128px;
+}
+
+.book__main_img{
+    width: 554px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEE9E2;
+}
+
+.book__main_img img{
+    width: 300px;
+    height: 350px;
+}
+
+.book__main_detais{
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    border-top: solid #E7E7E7 1px;
+}
+
+.book__main_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 41px 0 24px 0;
+}
+
+.book__main_rating{
+    display: flex;
+    gap: 8px;
+}
+
+.book__main_info{
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+}
+
+.book__main_infoText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book__main_moreDetails{
+    margin: 16px 0 59px 0;
+}
+
+.book__main_moreDetails button{
+    display: flex;
+    gap: 8px;
+}
+
+.book__main_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.btn_addToCart{
+    width: 100%;
+    height: 56px;
+    background-color: #313037;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+}
+
+.book__socials{
+    display: flex;
+    gap: 24px;
+    margin: 48px 0 72px 0;
+}
