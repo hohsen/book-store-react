@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { Link } from "react-router-dom";
 
 import arrowBackBig from "../../assets/icons/arrow-back.svg";
 import arrowBackSmall from "../../assets/icons/arrow-back-small.svg";
@@ -9,21 +10,32 @@ export const Favorite: FC = () => {
   return (
     <div>
       <div>
-        <button>
-          <img src={arrowBackBig} alt="back" />
-        </button>
+        <Link to="/">
+          <img src={arrowBackBig} alt="Go back" />
+        </Link>
         <h1 className={styles.title}>favorite</h1>
       </div>
-      <div></div>
-      <div>
-        <h3>popular books</h3>
-        <div>
-          <button>
-            <img src={arrowBackSmall} alt="back" />
-          </button>
-          <button>
-            <img src={arrowNextSmall} alt="next" />
-          </button>
+      <div className={styles.favoriteBooks}>
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div className={styles.popularBooks}>
+        <div className={styles.popularBooks__header}>
+          <h3>popular books</h3>
+          <div className={styles.popularBooks__header_nav}>
+            <Link to="">
+              <img src={arrowBackSmall} alt="back" />
+            </Link>
+            <Link to="">
+              <img src={arrowNextSmall} alt="next" />
+            </Link>
+          </div>
+        </div>
+        <div className={styles.popularBooks__books}>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </div>
     </div>
