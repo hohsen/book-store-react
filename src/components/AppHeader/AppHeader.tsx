@@ -32,7 +32,7 @@ export const AppHeader: FC = () => {
           <Link to="cart" data-action-id="cart" className={styles.icon}>
             <img src={shoppingBag} alt="cart" />
           </Link>
-          <Link to="profile" data-action-id="profile" className={styles.icon}>
+          <Link to="login" data-action-id="profile" className={styles.icon}>
             <img src={user} alt="user" />
           </Link>
         </div>

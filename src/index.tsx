@@ -11,10 +11,11 @@ import "./index.css";
 
 import { AppLayout } from "./components/AppLayout";
 import { Subscribe } from "./components/Subscribe";
+import { BookPage } from "./features/books-grid/components/book";
 import { Grid } from "./features/books-grid/components/grid";
 import { Cart } from "./features/cart";
 import { Favorite } from "./features/favorite";
-import { Profile } from "./features/profile";
+import { LoginPage, Profile } from "./features/profile";
 
 // const BookPage: FC = () => {
 //   const params = useParams();
@@ -31,12 +32,20 @@ export const router = createBrowserRouter([
         element: [<Grid />, <Subscribe />],
       },
       {
+        path: "/book/:isbn13",
+        element: <BookPage />,
+      },
+      {
         path: "/favorites",
         element: <Favorite />,
       },
       {
         path: "/cart",
         element: <Cart />,
+      },
+      {
+        path: "/login",
+        element: <LoginPage />,
       },
       {
         path: "/profile",
